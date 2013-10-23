@@ -36,9 +36,7 @@ add_library(netfilter_conntrack SHARED
 	callback.c
 )
 
-set_target_properties(netfilter_conntrack PROPERTIES
-                      INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/lib
-                      INSTALL_RPATH_USE_LINK_PATH TRUE)
-target_link_libraries(netfilter_conntrack ${NFNETLINK_LIBRARY} ${MNL_LIBRARY} dl)
+target_link_libraries(netfilter_conntrack nfnetlink mnl dl)
+#target_link_libraries(netfilter_conntrack ${NFNETLINK_LIBRARY} ${MNL_LIBRARY} dl)
 
 install(TARGETS netfilter_conntrack DESTINATION lib)
