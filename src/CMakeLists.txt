@@ -36,7 +36,5 @@ add_library(netfilter_conntrack SHARED
 	callback.c
 )
 
-target_link_libraries(netfilter_conntrack nfnetlink mnl dl)
-#target_link_libraries(netfilter_conntrack ${NFNETLINK_LIBRARY} ${MNL_LIBRARY} dl)
-
+target_link_libraries(netfilter_conntrack ${NFNETLINK_LIBRARY} ${MNL_LIBRARY} dl)
 install(TARGETS netfilter_conntrack DESTINATION lib)
