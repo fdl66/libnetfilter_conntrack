@@ -1,3 +1,4 @@
+SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 add_library(netfilter_conntrack SHARED
 	conntrack/api.c
