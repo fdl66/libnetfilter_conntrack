@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 project(libnetfilter_conntrack)
-
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 message("hi ${CMAKE_INSTALL_PREFIX}")
 set(CMAKE_SKIP_BUILD_RPATH FALSE)
 set(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
