@@ -24,9 +24,6 @@ case "$host" in
 esac
 
 dnl Dependencies
-PKG_CHECK_MODULES([LIBNFNETLINK], [libnfnetlink >= 1.0.0])
-PKG_CHECK_MODULES([LIBMNL], [libmnl >= 1.0.3])
-
 AC_CHECK_HEADERS(arpa/inet.h)
 dnl Check for inet_ntop
 AC_CHECK_FUNCS(inet_ntop)
